@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>news portal </title>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/1df5e4fa9d.js" crossorigin="anonymous"></script>
     <!-- tailwind css  -->
     <link rel="stylesheet" href="install.css">
     <!-- javascript file  -->
     <script src="app.js" defer></script>
 </head>
-<body>
+<body class="bg-gray-200">
    <header>
     <!-- navbar starts here  -->
     <nav class="container w-[90%] mx-auto"> 
@@ -49,12 +51,94 @@
     <!-- navbar ends here  -->
     <div class="h-[1px] bg-gray-300 w-[90%] mx-auto">
     </div>
+    <!-- pagination starts here  -->
+    <section class="topic-section w-[85%] mx-auto mt-8">
+     
+        <ul class="topics-list flex">
+          <li class="text-gray-500 active:bg-purple-200 active:text-purple-700 active:font-semibold mr-8 px-2 py-1 rounded">Home</li>
+         
+        </ul>
+    
+    </section>
+    <!-- pagination ends here  -->
    </header>
    <main>
+      <section class="Headline-section  w-[85%] mx-auto my-16">
+        <div class="flex justify-between">
+          <h1 class="text-5xl"><span class="font-semibold">Today's</span>  Headlines</h1>
+          <div>          
+            <button class="btn btn-outline btn-primary">Today's Pick</button>
+            <button class="btn btn-outline btn-primary">Trending</button>
+          </div>
+        </div>
+        <article class="grid grid-cols-4 grid-rows-[8] gap-4 mt-5">
+           <div class="col-span-3 row-span-3 bg-white rounded-lg">
+            <div class="bg-cover bg-[url('https://images.unsplash.com/photo-1600250395178-40fe752e5189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80')] text-white rounded-lg">
 
+              <h2 class="text-4xl pt-60 pl-12 font-bold">LIVEPremier  League reaction & transfer latest as Chelsea lose again</h2>
+              <div class="flex gap-5 pl-12 py-8">
+                <p>2 Hours Ago</p>
+                <p>CNN Indonesia</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <button class="btn btn-error ml-6 mt-3">Error</button>
+            <div class="flex gap-6 mr-4 py-6">
+              <p><i class="fa-regular fa-eye"></i>1.5M</p>
+              <p class=""><i class="fa-regular fa-comment"></i>5k</p>
+              <p><i class="fa-solid fa-share-nodes"></i>15k</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" bg-white row-span-2 "></div>
+        <div class=" bg-white col-span-3 row-span-5 p-6 rounded-lg">
+          <h2 class="text-4xl font-semibold">Latest News</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              <h3 class="text-[19px] font-semibold">News Title Lorem Ipsun Lorem ipsum dolor sit amet.</h3>
+              <div class="flex gap-4 text-gray-500">
+                <p>1 Hour Ago</p>
+                <p>CNN Indonesia</p>
+              </div>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              <h3>News Title Lorem Ipsun Lorem ipsum dolor sit amet.</h3>
+              <div class="flex gap-4">
+                <p>1 Hour Ago</p>
+                <p>CNN Indonesia</p>
+              </div>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              <h3>News Title Lorem Ipsun Lorem ipsum dolor sit amet.</h3>
+              <div class="flex gap-4">
+                <p>1 Hour Ago</p>
+                <p>CNN Indonesia</p>
+              </div>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              <h3>News Title Lorem Ipsun Lorem ipsum dolor sit amet.</h3>
+              <div class="flex gap-4">
+                <p>1 Hour Ago</p>
+                <p>CNN Indonesia</p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class=" bg-white row-span-2 "></div>
+        <div class=" bg-white row-span-2 "></div>
+        <div class=" bg-white row-span-2 "></div>
+        
+      </article>
+      </section>
    </main>
    <footer>
-    
+
    </footer>
 </body>
 </html>
